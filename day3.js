@@ -1,12 +1,25 @@
-const countChar=(word,char)=>{
-    word=word.toLowerCase()
+// const countChar=(word,char)=>{
+//     word=word.toLowerCase()
+//     char=char.toLowerCase()
+//     totalCount=word.split("").reduce((a,b)=>{
+//         if(b===char){
+//             a++
+//         }
+//         return a
+//     },0)
+//     return totalCount
+// }
+// console.log(countChar("PranavPrakashRanmale","r"))
+
+const countChar=(str,char)=>{
+    str=str.toLowerCase()
     char=char.toLowerCase()
-    totalCount=word.split("").reduce((a,b)=>{
+    totalWord=str.split("").reduce((a,b)=>{
         if(b===char){
             a++
         }
         return a
     },0)
-    return totalCount
+    return totalWord
 }
-console.log(countChar("PranavPrakashRanmale","r"))
+console.log(countChar("Pranav Prakash Ranmale","r"))
